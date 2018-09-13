@@ -27,10 +27,11 @@
         <sqlMapGenerator targetPackage="mapper" targetProject="src/main/resources"/>
 
         <!-- 配置dao接口生成信息-->
-        <javaClientGenerator type="XMLMAPPER" targetPackage="dick.dao" targetProject="src/main/java"/>
+        <javaClientGenerator type="ANNOTATEDMAPPER" targetPackage="dick.dao" targetProject="src/main/java"/>
 
 
-        <table tableName="table_memo" enableCountByExample="false"
+        <table tableName="table_comment"  domainObjectName="Comment"
+        		enableCountByExample="false"
                enableUpdateByExample="false" enableDeleteByExample="false"
                enableSelectByExample="false" selectByExampleQueryId="false"
         >

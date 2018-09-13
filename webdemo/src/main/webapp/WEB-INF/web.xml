@@ -11,7 +11,7 @@
     </listener>
     <context-param>
         <param-name>contextConfigLocation</param-name>
-        <param-value>classpath:applicatoin-context.xml</param-value>
+        <param-value>classpath:application-context.xml</param-value>
     </context-param>
 
     <!--springMVC核心分配器-->
