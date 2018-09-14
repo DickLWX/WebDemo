@@ -26,8 +26,8 @@ public interface UserMapper extends BaseMapper<User>{
         "salt, token_exptime)",
         "values (#{userId,jdbcType=VARCHAR}, #{userNickname,jdbcType=VARCHAR}, ",
         "#{userPassword,jdbcType=VARCHAR}, #{userEmail,jdbcType=VARCHAR}, ",
-        "#{actiState,jdbcType=INTEGER}, #{actiCode,jdbcType=VARCHAR}, ",
-        "#{salt,jdbcType=VARCHAR}, #{tokenExptime,jdbcType=TIMESTAMP})"
+        "0, uuid(),",
+        "#{salt,jdbcType=VARCHAR}, now())"
     })
     int insert(User record);
 
